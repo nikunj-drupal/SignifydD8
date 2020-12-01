@@ -1,0 +1,5 @@
+name: WSF Signifyd
+description: Custom module for Signifyd.
+core: 8.x
+type: module
+package: Custom

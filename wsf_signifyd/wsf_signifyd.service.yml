@@ -1,0 +1,5 @@
+services:
+    wsf_signifyd.order_complete:
+        class: Drupal\wsf_signifyd\EventSubscriber\OrderComplete
+        tags:
+            - { name: 'event_subscriber' }

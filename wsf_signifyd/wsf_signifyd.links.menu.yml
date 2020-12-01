@@ -1,0 +1,6 @@
+wsf_signifyd.config:
+  title: Signifyd API Configuration
+  route_name: wsf_signifyd.form
+  parent: system.admin_config_system
+  description: 'Signifyd API Configuration'
+  weight: -20

@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * Implements hook_schema.
+ */
+ function wsf_signifyd_schema() { 
+   $schema['wsf_signifyd'] = array(
+     //The data table that stores QuickBooks Custmoers Details.
+     'description' => 'The data table that stores QuickBooks Custmoers Details',
+     'fields' => array(
+        'primary_key' => array(
+          'description' => 'Unique ID.',
+          'type' => 'serial',
+          'not null' => TRUE,
+        ),
+       'orderID' => array(
+         'description' => '',
+         'type' => 'varchar',
+         'length' => 32,
+         'default' => '',
+       ),
+       'investigationId' => array(
+         'description' => '',
+         'type' => 'varchar',
+         'length' => 32,
+         'default' => '',
+       ),
+     ),
+     'indexes' => array(
+       'primary_key' => array(
+         'primary_key',
+       ),
+     ),
+     'primary key' => array('primary_key'),
+   );
+   
+   return $schema;
+ }

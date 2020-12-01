@@ -1,0 +1,7 @@
+wsf_signifyd.form:
+  path: '/admin/config/signifyd'
+  defaults:
+    _title: 'Signifyd API Settings'
+    _form: '\Drupal\wsf_signifyd\Form\SignifydForm'
+  requirements:
+    _permission: 'administer site configuration'
